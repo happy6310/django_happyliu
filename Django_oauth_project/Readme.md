@@ -1,6 +1,6 @@
 
 # 基于Django OAuth Toolkit 实例
-自己学习使用django oauth tookit 
+自己学习使用django oauth tookit。 
 
 ## 创建项目目录
 
@@ -9,20 +9,20 @@
  cd django_happyliu
  mkdir -p templates/registration
 ```
-##创建虚拟环境
+## 创建虚拟环境
 
 ```
     python3 -m venv env
     source env/bin/activate  # On Windows use `env\Scripts\activate`
 ```
-##安装依赖
+## 安装依赖
 
 ```
 pip install django 
 pip install django-oauth-toolkit 
 pip install django-cors-middleware 
 ```
-##创建工程Django_oauth_project 及应用 Django_oauth_app
+## 创建工程Django_oauth_project 及应用 Django_oauth_app
 
 ```
 django-admin startproject Django_oauth_project
@@ -66,12 +66,12 @@ urlpatterns = [
 ]
 
 ```
-##配置数据库
+## 配置数据库
 
 ```
 python manage.py migrate
 ```
-##配置django管理员账号 
+## 配置django管理员账号 
 ```
 python manage.py createsuperuser --email admin@example.com --username admin
 ```
@@ -207,25 +207,5 @@ python manage.py runserver
 ### 参考文章
 - [Oauth2.0基于Django的搭建使用（1）](https://www.jianshu.com/p/ba7eb3163794)
 - [Oauth2.0基于Django的搭建使用（2）](https://www.jianshu.com/p/b7ec28b05c72)
-- [Test your OAuth2 provider, I'll be your consumer](http://django-oauth-toolkit.herokuapp.com/consumer/)
-- (http://django-oauth-toolkit.herokuapp.com/consumer/client/)
 
-
-## Install Django and  django-oauth-toolkit django-cors-middleware  Django REST framework into the virtual environment
-pip install django django-oauth-toolkit django-cors-middleware djangorestframework
-
-
-#Set up a new project with a single application
-django-admin startproject Django_oauth_project
-cd Django_oauth_project
-django-admin startapp Django_oauth_app
-
-
-python manage.py migrate
-
-#create superuser for django
-python manage.py createsuperuser --email admin@example.com --username admin
-
-
-# run django 
-python manage.py runserver 
+ 
